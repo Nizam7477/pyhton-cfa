@@ -1,0 +1,59 @@
+def give_options(x,y,z):
+    print("a):", x)
+    print("b):", y)
+    print("c):", z)
+    
+print("Mari Kita Uji minda" "\n" "semua soalan adalah 10 markah setiap satu")
+ans = input("taip 'ya' jika anda bersedia dan tidak jika tak bersedia (ya/tidak): ")
+a ="Taipkan semula jawapan bukan pilihan a,b, atau c."
+score = 0
+total_questions = 4
+
+jawapan =["python", "html", "scratch", "sql"]
+
+if ans.lower() == "ya":
+    print(a)
+    print("Soalan 1- Apakah bahasa pengaturcaraan yang anda belajar di tingkatan 2 dan 3? ")
+    give_options("python", "html", "scratch" )
+    ans=input("jawapan:")
+    if ans.lower() == jawapan[0]:
+        score=score+1
+        print("betul")
+    else:
+        print("salah")
+    print(a)
+    print("soalan 2 - bahasa pengaturcaraaan yang digunakan untuk membina laman web ? ")
+    give_options("python", "html", "scratch")
+    ans = input("jawapan:")
+    if ans.lower() == jawapan[1]:
+        score=score+1
+        print("betul")
+    else:
+        print("salah")
+    print(a)
+    print("Soalan 3 - bahasa pengaturcaraan menggunakan blok-blok yang ? ")
+    give_options("python", "html", "scratch")
+    ans = input("jawapan:")
+    if ans.lower() == jawapan[2]:
+        score=score+1
+        print("betul")
+    else:
+        print("salah")
+    print(a)
+    print("soalan 4 - bahasa pengaturcaraan menggunakan arahan Select? ")
+    give_options("html", "scratch", "sql")
+    ans = input("jawapan:")
+    if ans.lower() == jawapan[3]:
+        score=score+1
+        print("betul")
+    else:
+        print("salah")
+
+i = score*10
+if i < 30:
+    print("Ouch, markah anda ialah ",i,"/ 40 cuba lagi .")
+elif i ==30:
+    print("bagus! markah anda ialah ",i,"/ 40 anda bijak.")
+else:
+    print("tahniah! markah anda ialah ",i,"/ 40 anda sangat bijak.")
+    
